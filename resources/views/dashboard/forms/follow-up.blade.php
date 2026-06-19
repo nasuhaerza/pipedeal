@@ -10,8 +10,8 @@
     </div>
 
     <div>
-        <label for="scheduled_at" class="block text-sm font-medium text-slate-700">Scheduled At</label>
-        <input id="scheduled_at" name="scheduled_at" type="datetime-local" value="{{ old('scheduled_at', isset($followUp) && $followUp->scheduled_at ? $followUp->scheduled_at->format('Y-m-d\TH:i') : '') }}" required class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-100" />
+        <label for="followup_date" class="block text-sm font-medium text-slate-700">Scheduled At</label>
+        <input id="followup_date" name="followup_date" type="datetime-local" value="{{ old('followup_date', isset($followUp) && $followUp->followup_date ? $followUp->followup_date->format('Y-m-d\TH:i') : '') }}" required class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm focus:border-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-100" />
     </div>
 
     <div>

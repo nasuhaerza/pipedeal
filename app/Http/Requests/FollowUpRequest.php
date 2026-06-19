@@ -15,7 +15,7 @@ class FollowUpRequest extends FormRequest
     {
         return [
             'deal_id' => ['required', 'exists:deals,id'],
-            'scheduled_at' => ['required', 'date'],
+            'followup_date' => ['required', 'date'],
             'notes' => ['nullable', 'string'],
         ];
     }
